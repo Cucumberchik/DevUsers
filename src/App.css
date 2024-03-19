@@ -1,0 +1,224 @@
+:root {
+	--purple-50: #faf5ff;
+	--purple-300: #b794f4;
+	--purple-600: #6b46c1;
+	--purple-900: #322659;
+};
+:root {
+  --font-family: "Open Sans", sans-serif;
+  --second-family: "SF Pro Display", sans-serif;
+  --third-family: "Montserrat", sans-serif;
+};
+input{
+  outline: none;
+}
+#Home{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  margin-top: 20px;
+  section{
+    width: 90%;
+    gap: 20px;
+  }
+  .home_search{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    .add{
+      width: 100px;
+      height: 30px;
+      border-radius: 4px;
+      padding: 10px;
+      background: #36f;
+      border: none;
+      font-family:sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 114%;
+      text-transform: uppercase;
+      text-align: center;
+      color: #fff;
+    }
+  }
+  .search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 332px;
+    height: 25px;
+    border: 1px solid gray;
+    input{
+      width: 70%;
+      border: none;
+      background: none;
+      outline: none;
+    }
+    button{
+      border: none;
+      background: none;
+      color: gray;
+    }
+  }
+  .home_users{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    h1{
+      font-family: sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 160%;
+      color: #222b45;
+      display: flex;
+      align-items: center;
+    }
+    .home_users_title{
+      background: #e4e9f2;
+      height: 57px;
+      width: 100%;
+      padding: 0px 30px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .home_users_name{
+      display: flex;
+      justify-content: space-between;
+      width: 250px;
+    }
+    .users{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      .user{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        align-items: center;
+        img{
+          width: 50px;
+          height: 50px;
+          border-radius: 100%;
+        }
+        h2{
+          font-family: sans-serif;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 133%;
+          color: #222b45;
+        }
+        button{
+          width: 30px;
+          height: 30px;
+          border-radius: 5px;
+          border: 1px solid red;
+          color: rgb(255, 37, 37);
+          background: rgba(197, 0, 0, 0.315);
+        }
+        div{
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+    .user_data{
+      width: 200px;
+      justify-content: space-between;
+    }
+    .user_name{
+      width: 58%;
+    }
+    .user_jobs{
+      width: 230px;
+      justify-content: space-between;
+    }
+  }
+}
+#modal_window{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .back{
+      width: 100%;
+      display: flex;
+      justify-content: start;
+    }
+    h1{
+      font-family: sans-serif;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 133%;
+      color: #222b45;
+    }
+    h2{
+      font-family: sans-serif;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 133%;
+      text-transform: uppercase;
+      color: #8f9bb3;
+    }
+    .forms{
+      margin-top: 30px;
+      width: 60%;
+      border-radius: 20px;
+      height: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      border: 1px solid #8f9bb3;
+      .form{
+        justify-content: space-evenly;
+        display: flex;
+        height: 40px;
+        inline-size: none;  
+        input{
+          outline: none;
+          width: 70%;
+          height: 35px;
+          padding: 0px 9px;
+          font-size: 18px;
+          border-radius: 6px;
+          border: 1px solid #8f9bb3;
+          background-color: #cbd9ff4d;
+        }
+        h2{
+          width: 20%;
+        }
+      }
+    }
+  }
+  .add{
+    margin-top: 30px;
+    width: 250px;
+    height: 35px;
+    border: none;
+    background: #36f;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 133%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+  }
+}
